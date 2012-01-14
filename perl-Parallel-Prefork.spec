@@ -8,13 +8,13 @@
 Summary:	Parallel::Prefork - A simple prefork server framework
 #Summary(pl.UTF-8):	
 Name:		perl-Parallel-Prefork
-Version:	0.11
+Version:	0.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Parallel/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d4b9347c414e7f0d30708e14e05ee3a6
+# Source0-md5:	d7802062d8f925b1f933de93d24c0fab
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Parallel-Prefork/
 BuildRequires:	perl-devel >= 1:5.8.0
