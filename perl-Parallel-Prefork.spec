@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Parallel
 %define		pnam	Prefork
 %include	/usr/lib/rpm/macros.perl
 Summary:	Parallel::Prefork - A simple prefork server framework
-#Summary(pl.UTF-8):	
 Name:		perl-Parallel-Prefork
 Version:	0.13
 Release:	1
@@ -15,8 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Parallel/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d7802062d8f925b1f933de93d24c0fab
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Parallel-Prefork/
+URL:		http://search.cpan.org/dist/Parallel-Prefork/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -30,12 +28,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Parallel::Prefork is much like Parallel::ForkManager, but supports graceful shutdown and run-time reconfiguration.
-
-
-
-# %description -l pl.UTF-8
-# TODO
+Parallel::Prefork is much like Parallel::ForkManager, but supports
+graceful shutdown and run-time reconfiguration.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
