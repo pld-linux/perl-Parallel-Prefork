@@ -4,7 +4,6 @@
 
 %define		pdir	Parallel
 %define		pnam	Prefork
-%include	/usr/lib/rpm/macros.perl
 Summary:	Parallel::Prefork - A simple prefork server framework
 Name:		perl-Parallel-Prefork
 Version:	0.18
