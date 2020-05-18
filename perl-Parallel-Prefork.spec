@@ -14,6 +14,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Parallel/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	128f8c03eddde44d3e95f092d6116e9a
 URL:		http://search.cpan.org/dist/Parallel-Prefork/
+BuildRequires:	perl-Module-Install
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -21,7 +22,9 @@ BuildRequires:	perl(Class::Accessor::Lite) >= 0.04
 BuildRequires:	perl(Proc::Wait3) >= 0.03
 BuildRequires:	perl(Scope::Guard)
 BuildRequires:	perl-List-MoreUtils
+BuildRequires:	perl-Signal-Mask
 BuildRequires:	perl-Test-Requires
+BuildRequires:	perl-Test-SharedFork
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
