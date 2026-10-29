@@ -7,13 +7,13 @@
 Summary:	Parallel::Prefork - A simple prefork server framework
 Name:		perl-Parallel-Prefork
 Version:	0.18
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Parallel/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Parallel/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	128f8c03eddde44d3e95f092d6116e9a
-URL:		http://search.cpan.org/dist/Parallel-Prefork/
+URL:		https://metacpan.org/dist/Parallel-Prefork
 BuildRequires:	perl-Module-Install
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
